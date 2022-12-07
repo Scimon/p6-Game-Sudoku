@@ -12,7 +12,8 @@ class Game::Sudoku:ver<1.1.4>:auth<zef:Scimon> {
     has Junction $!none-all;
     has %!poss-cache = ();
     has %!test-cache = ();
-    
+
+    # Builds the Grid from a string
     multi submethod BUILD( GridCode :$code = ("0" x 81) ) {
         my @tmp = $code.comb.map( *.Int );
         my @initial-list = ();
