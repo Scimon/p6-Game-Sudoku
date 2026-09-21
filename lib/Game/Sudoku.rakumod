@@ -1,6 +1,6 @@
 use v6.c;
 
-class Game::Sudoku:ver<1.1.4>:auth<zef:Scimon> {
+class Game::Sudoku:ver<1.1.5>:auth<zef:Scimon> {
 
     subset GridCode of Str where * ~~ /^ <[0..9]> ** 81 $/;
     subset Idx of Int where 0 <= * <= 8;
