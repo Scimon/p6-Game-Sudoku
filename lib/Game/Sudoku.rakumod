@@ -62,6 +62,7 @@ class Game::Sudoku:ver<1.1.4>:auth<zef:Scimon> {
         );
     }
 
+    multi method perl is DEPRECATED {
         return @!grid.raku;
     }
 
