@@ -9,9 +9,9 @@ sub solve-puzzle( Game::Sudoku $game ) is export {
 sub find-solution( Game::Sudoku $result ) {
     my $initial;
     repeat {
-        $initial = $result.perl;
+        $initial = $result.raku;
         simple-solutions( $result );
-    } while ( ! $result.complete && $result.perl ne $initial );
+    } while ( ! $result.complete && $result.raku ne $initial );
 
     return $result if $result.complete;
 

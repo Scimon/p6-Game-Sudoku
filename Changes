@@ -1,6 +1,8 @@
 Revision history for Game-Sudoku
 
 {{$NEXT}}
+    - add .raku and use .raku internally
+    - deprecate .perl method
 
 1.1.4  2022-10-19T09:04:56+01:00
     - Update module names
